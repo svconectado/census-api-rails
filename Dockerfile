@@ -26,5 +26,4 @@ ENTRYPOINT ["entrypoint.sh"]
 EXPOSE 3000
 
 # Start puma
-RUN env
 CMD bundle exec rails s -p 3000 -b 0.0.0.0
