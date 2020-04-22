@@ -44,3 +44,12 @@ gem 'tzinfo-data', platforms: [:mingw, :mswin, :x64_mingw, :jruby]
 gem 'apipie-rails'
 gem 'dotenv-rails', groups: [:development, :test]
 gem 'pry-rails', group: :development
+
+# Users and session management
+gem 'devise'
+
+# Data Handling
+gem 'responders'
+gem 'active_model_serializers'
+gem 'fast_jsonapi'
+gem 'faker', github: 'faker-ruby/faker', branch: 'master'
