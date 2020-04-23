@@ -1,0 +1,20 @@
+AllCops:
+  Exclude:
+    - "vendor/**/*"
+    - "db/schema.rb"
+    - "spec/fixtures/**/*"
+  UseCache: false
+  DefaultFormatter: progress
+  DisplayStyleGuide: true
+  DisplayCopNames: false
+  TargetRubyVersion: 2.7.0
+
+inherit_gem:
+  rubocop-rails_config:
+    - config/rails.yml
+
+Style/FrozenStringLiteralComment:
+  Enabled: false
+
+Style/StringLiterals:
+  EnforcedStyle: single_quotes

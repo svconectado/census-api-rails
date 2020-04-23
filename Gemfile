@@ -42,8 +42,6 @@ gem 'tzinfo-data', platforms: [:mingw, :mswin, :x64_mingw, :jruby]
 
 # Documentation
 gem 'apipie-rails'
-gem 'dotenv-rails', groups: [:development, :test]
-gem 'pry-rails', group: :development
 
 # Users and session management
 gem 'devise'
@@ -52,4 +50,9 @@ gem 'devise'
 gem 'responders'
 gem 'active_model_serializers'
 gem 'fast_jsonapi'
-gem 'faker', github: 'faker-ruby/faker', branch: 'master'
+
+# local Tweaks
+gem 'dotenv-rails', groups: [:development, :test]
+gem 'pry-rails', group: :development
+gem 'faker', github: 'faker-ruby/faker', branch: 'master', groups: [:development, :test]
+gem 'rubocop-rails_config'
